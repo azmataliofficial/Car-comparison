@@ -1,0 +1,91 @@
+
+/* about page */
+
+
+.container2{
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgb(0, 0, 0,0.40));
+    background-position: center;
+    background-size: center;
+}
+.navbar2{
+    width: 100%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo2{
+    width: 160px;
+    margin-top: -10px;
+    cursor: pointer;
+    position: relative;
+    right: 220;
+}
+.navbar2 a{
+    margin-left: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 5px 20px;
+    position: relative;
+    left: 200;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+.navbar2 a:hover{
+    color: rgb(255, 255, 255);
+    background-color: green;
+    border: none;
+    cursor: pointer;
+}
+    body{
+        background-image: url(https://d2ox13tjqpxop5.cloudfront.net/BUGATTI-2023/Bugatti-Models/W16-Mistral/mistral-iv-3-desktop.jpeg);
+        background-size: cover;
+        background-position: fixed;
+    }
+    .cont{
+        height: 170px;
+        width: 440px;
+        padding: 10px;
+        position: relative;
+        top: 400;
+        left: 30;
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        border: 0.2px solid gray;
+        animation: pop 0.7s ease-in 1;
+    }
+    @keyframes pop {
+        from{
+            left: 150px;
+        }
+    }
+    .line{
+        background-color: rgb(255, 255, 255);
+        height: 150px;
+        width: 10px;
+    }
+    h1{
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        position: relative;
+        left: 20;
+        top: -150;
+    }
+    p{
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        position: relative;
+        left: 20;
+        top: -145;
+        padding: 0px 20px 0px 0px;
+    }

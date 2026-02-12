@@ -1,0 +1,248 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - Car's Gallery</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("https://www.classicdriver.com/sites/default/files/users/194497/cars_images/feed_1000374/2614a1badf9269d7a44c09aec9c11760.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 100%;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgb(0, 0, 0, 0.10));
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            width: 90%;
+            padding: 30px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            width: 160px;
+            margin-top: -10px;
+            cursor: pointer;
+            position: relative;
+            right: 170px; /* Fixed: Added 'px' */
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-left: 150px; /* Fixed: Instead of position left */
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: black;
+            border: 2px solid gold;
+            border-radius: 20px;
+            padding: 5px 20px;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+        }
+
+        .nav-links a:hover {
+            color: black;
+            background-color: gold;
+            border: none;
+        }
+
+        .cont {
+            backdrop-filter: blur(2px);
+            background-color: rgba(255, 255, 255, 0.3);
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            max-width: 420px;
+            height: auto;
+            min-height: 520px;
+            border-radius: 20px;
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+            border: 2px solid rgba(128, 128, 128, 0.481);
+            padding: 10px;
+        }
+
+        .container1 {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+            background-color: rgb(255, 0, 0);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .box img {
+            width: 120px;
+            height: 120px;
+            background-color: rgb(255, 0, 0);
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .box p {
+            background-color: rgba(255, 255, 255, 0.57);
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            margin-top: 5px;
+            padding: 1px 3px;
+            font-size: 12px;
+        }
+
+        .box input[type="checkbox"] {
+            accent-color: rgb(18, 165, 18);
+            height: 18px;
+            width: 18px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            z-index: 10;
+        }
+
+        .buy-btn {
+            height: 40px;
+            width: 120px;
+            margin: 20px auto 10px;
+            border-radius: 10px;
+            border: 2px solid gold;
+            background: transparent;
+            font-size: 18px;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            display: block;
+        }
+
+        .buy-btn:hover {
+            background-color: gold;
+            color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            
+            .logo {
+                right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .nav-links {
+                margin-left: 0;
+            }
+            
+            .nav-links a {
+                margin: 5px;
+            }
+            
+            .cont {
+                position: relative;
+                right: 0;
+                bottom: 0;
+                margin: 30px auto;
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="logo.webp" alt="Car's Gallery Logo">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about%20us.html">About us</a>
+                <a href="comparison.html">Comparison</a>
+                <a href="Accessories.html">Accessories</a>
+                <a href="Feedback.html">Feedback</a>
+                <a href="Signup.html">Sign-up</a>
+                <a href="Sign%20in.html">Sign-in</a>
+                <a href="logout%20page.html">Log-out</a>
+            </div>
+        </div>
+        
+        <div class="cont">
+            <div class="container1">
+                <div class="box">
+                    <img src="https://i.pinimg.com/736x/4e/f4/3b/4ef43b4987f1f6f4045ce537d0a79bea.jpg" alt="Seat Cover">
+                    <input type="checkbox" value="Seat Cover">
+                    <p>Seat Cover</p>
+                </div>
+                <div class="box">
+                    <img src="https://i.pinimg.com/736x/02/44/c8/0244c8177b12b03eb25aab87cab92f24.jpg" alt="Wheel">
+                    <input type="checkbox" value="Wheel">
+                    <p>Wheel</p>
+                </div>
+                <div class="box">
+                    <img src="https://i.pinimg.com/736x/56/f8/8e/56f88ee08b4800f7563a8c75bd501676.jpg" alt="Steering Wheel">
+                    <input type="checkbox" value="Steering Wheel">
+                    <p>Steering Wheel</p>
+                </div>
+                <div class="box">
+                    <img src="https://i.pinimg.com/736x/35/e1/86/35e1869c3db7eddde4f736f7634e8efd.jpg" alt="Navigation GPS">
+                    <input type="checkbox" value="Navigation GPS">
+                    <p>Navigation GPS</p>
+                </div>
+                <div class="box">
+                    <img src="https://i.pinimg.com/736x/cb/2e/6e/cb2e6e91647e016f4400aaeaec827394.jpg" alt="Car Cover">
+                    <input type="checkbox" value="Car Cover">
+                    <p>Car Cover</p>
+                </div>
+                <div class="box">
+                    <img src="https://i.pinimg.com/736x/c9/a7/39/c9a7390825ffda0b7a5205296b005035.jpg" alt="Neck Rest">
+                    <input type="checkbox" value="Neck Rest">
+                    <p>Neck Rest</p>
+                </div>
+                <div class="box">
+                    <img src="https://i.pinimg.com/736x/b2/25/21/b225213d428c9de7a37b4de1d3a1fe1b.jpg" alt="Side Mirror">
+                    <input type="checkbox" value="Side Mirror">
+                    <p>Side Mirror</p>
+                </div>
+                <div class="box">
+                    <img src="https://i.pinimg.com/736x/e7/37/a2/e737a2029f40b91a510b2b3bd8c494fa.jpg" alt="Foot Mat">
+                    <input type="checkbox" value="Foot Mat">
+                    <p>Foot Mat</p>
+                </div>
+                <div class="box">
+                    <img src="https://i.pinimg.com/736x/43/cb/f5/43cbf517211d495a2bf003ec7a7a0214.jpg" alt="Music System">
+                    <input type="checkbox" value="Music System">
+                    <p>Music System</p>
+                </div>
+                <button class="buy-btn">Buy</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

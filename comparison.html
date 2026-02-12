@@ -1,0 +1,344 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison - Car's Gallery</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(https://images.hdqwalls.com/wallpapers/bugatti-sport-car-77.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 100%;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgb(0, 0, 0, 0.10));
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            width: 90%;
+            padding: 30px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            width: 160px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: black;
+            border: 2px solid gold;
+            border-radius: 20px;
+            padding: 5px 12px;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+        }
+
+        .nav-links a:hover {
+            color: black;
+            background-color: gold;
+            border: none;
+        }
+
+        .container1 {
+            width: 95%;
+            max-width: 780px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            margin: 30px auto;
+            backdrop-filter: blur(1px);
+            border: 2px solid white;
+            overflow-x: auto;
+        }
+
+        #head {
+            font-size: 25px;
+        }
+
+        #midhead {
+            font-size: 25px;
+        }
+
+        td img {
+            width: 200px;
+            height: auto;
+            max-width: 100%;
+        }
+
+        table {
+            border: none;
+            width: 100%;
+        }
+
+        select {
+            background-color: rgba(255, 255, 255, 0.7);
+            width: 100%;
+            height: 40px;
+            border: none;
+            padding: 5px;
+        }
+
+        .purple {
+            background-color: rgba(87, 87, 182, 0.4);
+        }
+
+        .gray {
+            background-color: rgba(128, 128, 128, 0.8);
+        }
+
+        tr {
+            text-align: center;
+            color: whitesmoke;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            
+            .logo {
+                right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .nav-links {
+                margin-left: 0;
+            }
+            
+            .nav-links a {
+                margin: 5px;
+            }
+            
+            .container1 {
+                width: 95%;
+                margin: 20px auto;
+            }
+            
+            td img {
+                width: 100px;
+            }
+            
+            #head, #midhead {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="logo.webp" alt="Car's Gallery Logo">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about%20us.html">About us</a>
+                <a href="comparison.html">Comparison</a>
+                <a href="Accessories.html">Accessories</a>
+                <a href="Feedback.html">Feedback</a>
+                <a href="Signup.html">Sign-up</a>
+                <a href="Sign%20in.html">Sign-in</a>
+                <a href="logout%20page.html">Log-out</a>
+            </div>
+        </div>
+        
+        <div class="container1">
+            <table border="1" cellspacing="0">
+                <tr class="gray">
+                    <td id="head" colspan="4">Compare your car's</td>
+                </tr>
+                <tr class="purple">
+                    <td></td>
+                    <td>
+                        <img src="https://logos-world.net/wp-content/uploads/2020/05/Mercedes-Benz-Logo.png" alt="Mercedes Logo">
+                    </td>
+                    <td>
+                        <img src="https://www.pngmart.com/files/22/Bugatti-Logo-PNG-Image.png" alt="Bugatti Logo">
+                    </td>
+                    <td>
+                        <img src="https://static.vecteezy.com/system/resources/previews/019/956/127/original/bmw-transparent-bmw-free-free-png.png" alt="BMW Logo">
+                    </td>
+                </tr>
+                <tr class="gray">
+                    <td>Make</td>
+                    <td>
+                        <select>
+                            <option>Mercedes</option>
+                            <option>Bugatti</option>
+                            <option>BMW</option>
+                            <option>Audi</option>
+                            <option>Lamborghini</option>
+                            <option>Ferrari</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Mercedes</option>
+                            <option>Bugatti</option>
+                            <option>BMW</option>
+                            <option>Audi</option>
+                            <option>Lamborghini</option>
+                            <option>Ferrari</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Mercedes</option>
+                            <option>Bugatti</option>
+                            <option>BMW</option>
+                            <option>Audi</option>
+                            <option>Lamborghini</option>
+                            <option>Ferrari</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="purple">
+                    <td>Year</td>
+                    <td>
+                        <select>
+                            <option>2010</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>2010</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>2010</option>
+                            <option>2011</option>
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option>2014</option>
+                            <option>2015</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="gray">
+                    <td>Model</td>
+                    <td>
+                        <select>
+                            <option>Mercedes G-Wagon</option>
+                            <option>Bugatti Chiron</option>
+                            <option>BMW i5</option>
+                            <option>Audi Q7</option>
+                            <option>Lamborghini Urus</option>
+                            <option>Ferrari 296 GTB</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Mercedes G-Wagon</option>
+                            <option>Bugatti Chiron</option>
+                            <option>BMW i5</option>
+                            <option>Audi Q7</option>
+                            <option>Lamborghini Urus</option>
+                            <option>Ferrari 296 GTB</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option>Mercedes G-Wagon</option>
+                            <option>Bugatti Chiron</option>
+                            <option>BMW i5</option>
+                            <option>Audi Q7</option>
+                            <option>Lamborghini Urus</option>
+                            <option>Ferrari 296 GTB</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="purple">
+                    <td id="midhead" colspan="4">General Information</td>
+                </tr>
+                <tr class="gray">
+                    <td>MSRP</td>
+                    <td>$22,235</td>
+                    <td>$21,680</td>
+                    <td>$21,900</td>
+                </tr>
+                <tr class="purple">
+                    <td>Invoice</td>
+                    <td>$20,345</td>
+                    <td>$19,849</td>
+                    <td>$20,422</td>
+                </tr>
+                <tr class="gray">
+                    <td>Destination</td>
+                    <td>$795.00</td>
+                    <td>$790.00</td>
+                    <td>$795.00</td>
+                </tr>
+                <tr class="purple">
+                    <td>Local Dealer Pricing</td>
+                    <td>Get Free Quotes</td>
+                    <td>Get Free Quotes</td>
+                    <td>Get Free Quotes</td>
+                </tr>
+                <tr class="gray">
+                    <td>Fuel Economy</td>
+                    <td>25 MPG city/35 MPG hwy</td>
+                    <td>24 MPG city/34 MPG hwy</td>
+                    <td>22 MPG city/34 MPG hwy</td>
+                </tr>
+                <tr class="purple">
+                    <td>Engine</td>
+                    <td>2.5L/152 Gas l4</td>
+                    <td>2.4L/144 Gas l4</td>
+                    <td>2.5L/152 Gas l4</td>
+                </tr>
+                <tr class="gray">
+                    <td>Transmission</td>
+                    <td>Auto, 6</td>
+                    <td>Manual, 6</td>
+                    <td>Auto, 6</td>
+                </tr>
+                <tr class="purple">
+                    <td>Horsepower</td>
+                    <td>178 hp @ 6000rpm</td>
+                    <td>185 hp @ 6400rpm</td>
+                    <td>170 hp @ TBD rpm</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

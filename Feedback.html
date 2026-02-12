@@ -1,0 +1,199 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Car's Gallery</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("https://blenderartists.org/uploads/default/optimized/4X/0/8/e/08e7001bde8023491cb47f1ac08b074c762aee9b_2_1023x575.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+.container {
+            width: 100%;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgb(0, 0, 0, 0.10));
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            width: 90%;
+            padding: 30px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            width: 160px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: black;
+            border: 2px solid gold;
+            border-radius: 20px;
+            padding: 5px 12px;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+        }
+
+        .nav-links a:hover {
+            color: black;
+            background-color: gold;
+            border: none;
+        }
+
+
+        .container1 {
+            width: 90%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid gray;
+            margin: 50px auto;
+            text-align: center;
+            backdrop-filter: blur(3px);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: gold;
+            padding-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding-bottom: 20px;
+        }
+
+        label {
+            color: gold;
+            font-size: 20px;
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            outline: none;
+            border: none;
+            padding: 12px 20px;
+            margin: 10px 0 20px;
+            border-radius: 20px;
+            border: 1px solid gray;
+            background: #ffffff;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 10px 0 20px;
+            border-radius: 20px;
+            border: 1px solid gray;
+            outline: none;
+            resize: vertical;
+        }
+
+        button {
+            background: none;
+            border: 2px solid gold;
+            border-radius: 20px;
+            width: 150px;
+            height: 45px;
+            margin: 10px auto;
+            color: gold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            display: block;
+        }
+
+        button:hover {
+            border: none;
+            background-color: gold;
+            color: white;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            
+            .logo {
+                right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .nav-links {
+                margin-left: 0;
+            }
+            
+            .nav-links a {
+                margin: 5px;
+            }
+            
+            .container1 {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="logo.webp" alt="Car's Gallery Logo">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about%20us.html">About us</a>
+                <a href="comparison.html">Comparison</a>
+                <a href="Accessories.html">Accessories</a>
+                <a href="Feedback.html">Feedback</a>
+                <a href="Signup.html">Sign-up</a>
+                <a href="Sign%20in.html">Sign-in</a>
+                <a href="logout%20page.html">Log-out</a>
+            </div>
+        </div>
+        
+        <div class="container1">
+            <h1>Give Your Suggestion</h1>
+            <p>We Are Always Ready To Serve You!</p>
+            
+            <form id="feedbackForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                
+                <label for="email">Your E-mail</label>
+                <input type="email" id="email" placeholder="Enter your e-mail" required>
+                
+                <label for="opinion">Opinion</label>
+                <textarea id="opinion" rows="5" placeholder="Write your feedback..." required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

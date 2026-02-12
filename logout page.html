@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout - Car's Gallery</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("https://th.bing.com/th/id/R.d168d0361c223689f2efd394f772544b?rik=2H9uDK1SMO4gww&riu=http%3a%2f%2fhdqwalls.com%2fdownload%2f2018-bugatti-divo-side-view-gs-3840x2400.jpg&ehk=YoxsQQWGB4w84CvKUZ%2ftC8ID%2fnHuARjmKQkhFkJNa1Q%3d&risl=1&pid=ImgRaw&r=0");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+.container {
+            width: 100%;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgb(0, 0, 0, 0.10));
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            width: 90%;
+            padding: 30px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            width: 160px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: black;
+            border: 2px solid gold;
+            border-radius: 20px;
+            padding: 5px 12px;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+        }
+
+        .nav-links a:hover {
+            color: black;
+            background-color: gold;
+            border: none;
+        }
+
+
+        .cont {
+            background-color: rgba(255, 255, 255, 0.274);
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            border: 2px solid rgb(255, 255, 255);
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+        }
+
+        h1 {
+            color: rgb(5, 88, 88);
+            text-align: center;
+            font-size: 45px;
+            text-shadow: 2px 2px 20px rgb(11, 61, 62);
+            margin-bottom: 30px;
+        }
+
+        p {
+            padding: 30px;
+            color: rgb(255, 255, 255);
+            background-color: rgba(14, 222, 152, 0.274);
+            border-radius: 20px;
+            border: 2px solid white;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            
+            .logo {
+                right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .nav-links {
+                margin-left: 0;
+            }
+            
+            .nav-links a {
+                margin: 5px;
+            }
+            
+            h1 {
+                font-size: 30px;
+            }
+            
+            p {
+                padding: 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="logo.webp" alt="Car's Gallery Logo">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about%20us.html">About us</a>
+                <a href="comparison.html">Comparison</a>
+                <a href="Accessories.html">Accessories</a>
+                <a href="Feedback.html">Feedback</a>
+                <a href="Signup.html">Sign-up</a>
+                <a href="Sign%20in.html">Sign-in</a>
+                <a href="logout%20page.html">Log-out</a>
+            </div>
+        </div>
+        
+        <div class="cont">
+            <h1>Thanks For Visiting Our Site</h1>
+            <p>Thank you for visiting our website! We are genuinely thrilled to have you here and appreciate the time you've taken to explore what we have to offer. Whether you've come to learn, shop, or simply discover more about what we do, we want to ensure your experience is nothing short of exceptional. Your visit means a great deal to us, and we aim to provide a seamless, informative, and enjoyable experience that meets your needs.</p>
+            <p style="margin-top: 20px;">At our core, we are committed to delivering valuable content and services that can make a positive impact. Every time you visit, we strive to offer high-quality resources, answers to your questions, and solutions to challenges you may be facing. Our website has been designed with you in mind, and we aim to keep improving, ensuring that it remains intuitive, user-friendly, and helpful. We value the feedback you provide, as it plays an essential role in enhancing the services and features we offer.</p>
+            <p style="margin-top: 20px;">Your trust and support inspire us to continue working hard every day. We don't take your time for granted, which is why we aim to make every visit worthwhile. The journey you take with us, whether it's through reading our blog, browsing our products, or accessing our services, is of utmost importance to us. We believe in building long-lasting relationships with our visitors, and we take great pride in fostering a sense of community that allows you to connect with us in meaningful ways.</p>
+            <p style="margin-top: 20px;">We understand that the digital world is constantly evolving, and we are committed to staying ahead by adapting to new trends, technologies, and user needs. Your satisfaction and experience are at the heart of what we do, and we are constantly working to ensure we meet the highest standards. If at any point you have questions, concerns, or suggestions, we encourage you to reach out. Your voice matters, and we are here to listen and assist you in any way possible.</p>
+            <p style="margin-top: 20px;">Once again, thank you for visiting our website. Your support means the world to us, and we look forward to continuing this journey with you. We are excited to keep offering valuable content and services that make your visits worthwhile. Stay connected, and we hope to see you back here soon!</p>
+        </div>
+    </div>
+</body>
+</html>
